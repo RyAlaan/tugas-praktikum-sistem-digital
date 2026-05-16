@@ -36,7 +36,7 @@ Gerbang XOR adalah gerbang logika yang memberikan output HIGH (1) hanya jika ked
 
 IC 74HC86 dapat kita gunakan untuk mensimulasikan rangkaian pada tinkercad. Modul ini adalah sirkuit terpadi yang berisi gerbang XOR ke dalam satu komponen fisik. Sama seperti 74HC32 (OR), IC ini memiliki susunan pin standar yang memudahkan proses wiring di breadboard atau simulator. IC bekerja pada rentang tegangan 2V hingga 6V.
 
-| A | B | A + B |
+| A | B | A o B |
 | - | - | ----- |
 | 0 | 0 | 0 |
 | 1 | 0 | 1 |
@@ -81,10 +81,26 @@ Gerbang NOR (Not-OR) adalah gerbang logika yang merupakan kebalikan dari gerbang
 
 IC 74HC02 adalah sirkuit terpadu yang berisi empat gerbang NOR. Susunan pin gerbang NOR ini adalah Ouput-Input-Input berbeda seperti kebanyakan IC 74HC yang lain.
 
+| A | B | (A + B)' |
+| - | - | -------- |
+| 0 | 0 | 1 |
+| 1 | 0 | 0 |
+| 0 | 1 | 0 |
+| 1 | 1 | 0 |
+
 ![alt text](image-5.png)
 
 ## 7. XNOR
 
+Gerbang XNOR (Exclusive-NOR) adalah gerbang logika yang merupakan kombinasi dari gerbang XOR dan gerbang NOT. Gerbang ini sering disebut sebagai equivalence gate karena outputnya hanya akan bernilai tinggi jika kedua inputnya memiliki kondisi yang sama. Secara fungsional, gerbang XNOR akan menghasilkan output logika HIGH (1) jika kedua inputnya bernilai sama (keduanya 0 atau keduanya 1). Sebaliknya, jika kedua inputnya berbeda, maka output yang dihasilkan akan bernilai LOW (0). Dalam rangkaian digital, XNOR sering digunakan sebagai comparator untuk mengecek apakah dua sinyal memiliki nilai yang sama.
 
+Rangkaian XNOR ini menggabungkan antara gerbang XOR dengan gerbang NOR secara bertahap. Pertama-tama, dua input switch dipasangkan ke gerbang XOR. Dari hasil output gerbang XOR tersebut kemudian dinegasikan menggunakan IC 74HC04 sebagai output dari rangkaian XNOR.
+
+| A | B | (A o B)' |
+| - | - | ----- |
+| 0 | 0 | 1 |
+| 1 | 0 | 0 |
+| 0 | 1 | 0 |
+| 1 | 1 | 1 |
 
 ![alt text](image-6.png)
