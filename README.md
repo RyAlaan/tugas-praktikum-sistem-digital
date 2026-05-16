@@ -4,7 +4,7 @@
 
 ## 1. AND
 
-Gerbang AND adalah salah satu gerbang logika dasar yang berfungsi sebagai pengali bilangan. Gerbang ini memiliki dua atau lebih jalur input dan hanya memiliki satu jalur output. Output gerbang AND hanya akan bernilai logika HIGH (1) jika dan hanya jika semua jalur inputnya secara bersamaan bernilai logika HIGH (1). Jika ada salah satu saja input yang bernilai logika LOW (0), maka otomatis output yang dihasilkan juga akan bernilai LOW (0). Gerbang ini memiliki peran penting dalam pengondisian, rangkaian latch, dan pemrosesan data biner pada perangkat komputer.
+Gerbang AND adalah salah satu gerbang logika dasar yang berfungsi sebagai pengali bilangan. Gerbang ini memiliki dua atau lebih jalur input dan hanya memiliki satu jalur output. Output gerbang AND hanya akan bernilai logika HIGH (1) jika dan hanya jika semua jalur inputnya secara bersamaan bernilai logika HIGH (1). Jika ada salah satu saja input yang bernilai logika LOW (0), maka otomatis output yang dihasilkan juga akan bernilai LOW (0). Gerbang ini memiliki peran penting dalam pengondisian, rangkaian latch, dan pemrosesan data biner pada perangkat komputer
 
 | A | B | A . B |
 | - | - | ----- |
